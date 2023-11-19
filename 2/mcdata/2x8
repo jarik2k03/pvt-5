@@ -1,0 +1,8 @@
+[oak-cn3:76022:0:76024] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x21000)
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec noticed that process rank 15 with PID 76022 on node oak-cn3 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
