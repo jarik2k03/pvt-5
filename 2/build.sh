@@ -1,3 +1,3 @@
 #!/bin/sh
-mpicc  -o mc.exe monte-carich.c -lm -lmpich
-mpicc  -o rg.exe runger.c -lm -lmpich
+mpicc  -o mcdata/mc.exe monte-carich.c -lm 
+mpicc  -o rgdata/rg.exe runger.c -lm 
