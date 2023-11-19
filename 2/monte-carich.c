@@ -49,9 +49,9 @@ int main(int argc, char **argv)
     if (rank == 0) {
         double v = 1 * (double)gin / n;
         double res = v * gsum / gin;
-        printf("Size: %d\n", commsize);
-        printf("Elapsed time = %.5f\n", max_elapsed_time);
-        printf("Result: %.12f, n %d\n", res, n);
+        printf("%.6f", max_elapsed_time);
+        // printf("Elapsed time = %.5f\n", max_elapsed_time);
+        // printf("Result: %.12f, n %d\n", res, n);
     }
     MPI_Finalize();
     return 0;
