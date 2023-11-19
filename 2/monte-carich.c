@@ -49,7 +49,7 @@ int main(int argc, char **argv)
     if (rank == 0) {
         double v = 1 * (double)gin / n;
         double res = v * gsum / gin;
-        printf("%.6f", max_elapsed_time);
+        printf("%d\t%.6f", commsize, max_elapsed_time);
         // printf("Elapsed time = %.5f\n", max_elapsed_time);
         // printf("Result: %.12f, n %d\n", res, n);
     }

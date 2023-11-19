@@ -53,7 +53,7 @@ int main(int argc, char **argv)
     MPI_Reduce(&elapsed_time, &max_elapsed_time, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
     
     if (rank == 0) {
-        printf("%.6f", elapsed_time);
+        printf("%d\t%.6f", commsize, elapsed_time);
         // printf("Elapsed time = %.6f, Time for comm = %.2f ,Result Pi: %.3f; Runge rule: EPS %e, n %d\n", elapsed_time, max_t / max_elapsed_time * 100,sq[k] * sq[k], eps, n / 2);
     }
 
