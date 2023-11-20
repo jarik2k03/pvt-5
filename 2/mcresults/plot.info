@@ -2,9 +2,11 @@
 set termoption enhanced
 set terminal svg size 800,600 font "Arial, 16"
 set output "plot.svg"
-set style line 1 lc rgb "0xDC143C" lt 1 lw 1.65 pt 1 ps 1
+set style line 1 lc rgb "0xDC143C" lt 3 lw 2.15 pt 1 ps 1
 set style line 2 lc rgb "0x6495ED" lt 1 lw 1.65 pt 1 ps 1
 set style line 3 lc rgb "0x67787B" lt 1 lw 1.65 pt 1 ps 1
+set style line 4 lc rgb "0xD2D2DF" lt 2 lw 1.65 pt 1 ps 1
+set style line 5 lc rgb "0x9F9B55" lt 2 lw 1.65 pt 1 ps 1
 set border lw 2
 set grid
 set key top left
@@ -19,6 +21,6 @@ set mxtics
 set format x "%g"
 set format y "%.3f"
 
-plot "res.dat" using 1:4 title "linear speedup" with linespoints ls 1, \
-"res.dat" using 1:2 title "n = 10^8 with 1 node" with linespoints ls 2, \
-"res.dat" using 1:3 title "n = 10^8 with 2 nodes" with linespoints ls 3
+plot "res.dat" using 1:1 title "linear speedup" with linespoints ls 1, \
+"res.dat" using 1:2 title "n = 10^7" with linespoints ls 2, \
+"res.dat" using 1:3 title "n = 10^8" with linespoints ls 3, \

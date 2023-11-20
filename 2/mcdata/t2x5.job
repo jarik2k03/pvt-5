@@ -1,0 +1,3 @@
+#!/bin/sh
+#SBATCH --nodes=2 --ntasks-per-node=5
+mpiexec mc.exe
