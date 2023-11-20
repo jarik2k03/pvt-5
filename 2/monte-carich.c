@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     MPI_Init(&argc, &argv);
     int in = 0;
     double s = 0;
-    const int n = 1e+8;
+    const int n = 1e+7;
     int rank, commsize;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &commsize);
