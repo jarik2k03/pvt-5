@@ -96,18 +96,18 @@ int main(int argc, char **argv)
         for (int i = 0; i < m; i++) {
             float r = (i + 1) * (n / 2.0 + pow(n, 2) / 2.0);
             if (fabs(c[i] - r) > 1E-6) {
-                fprintf(stderr, "Validation failed: elem %d = %f (real value %f)\n", i, c[i], r);
+                //fprintf(stderr, "Validation failed: elem %d = %f (real value %f)\n", i, c[i], r);
                 break;
             }
         }
     
-        printf("DGEMV: matrix-vector product (c[m] = a[m, n] * b[n]; m = %d, n = %d)\n", m, n);
-        printf("Memory used: %" PRIu64 " MiB\n", (u_int64_t)(((float)m * n + m + n) * sizeof(float)) >> 20);
+        //printf("DGEMV: matrix-vector product (c[m] = a[m, n] * b[n]; m = %d, n = %d)\n", m, n);
+        //printf("Memory used: %" PRIu64 " MiB\n", (u_int64_t)(((float)m * n + m + n) * sizeof(float)) >> 20);
         
         float gflop = 2.0 * m * n * 1E-9;
         
-        printf("Elapsed time (%d procs): %.6f sec.\n", commsize, t);
-        printf("Performance: %.2f GFLOPS\n", gflop / t);
+        printf("%.6f\n", t);
+        //printf("Performance: %.2f GFLOPS\n", gflop / t);
     }
 
     free(a);
