@@ -55,7 +55,7 @@ void dgemv(float *a, float *b, float *c, int m, int n) {
         displs[i] = (i > 0) ? displs[i - 1] + rcounts[i - 1] : 0;
     }
 
-    MPI_Allgatherv(&c[lb], ub - lb + 1, MPI_FLOAT, c, rcounts, displs,
+    MPI_Allgatherv(MPI_IN_PLACE, ub - lb + 1, MPI_FLOAT, c, rcounts, displs,
                    MPI_FLOAT, MPI_COMM_WORLD);
 
     free(displs);
