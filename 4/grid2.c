@@ -10,8 +10,8 @@
 
 int main(int argc, char *argv[]) {
     FILE* out = fopen("serial", "w");
-    int rows = 1000;
-    int cols = 1000;
+    int rows = 2000;
+    int cols = 2000;
     int ny = rows;
     int nx = cols;
     double *local_grid = calloc(ny * nx, sizeof(*local_grid));
