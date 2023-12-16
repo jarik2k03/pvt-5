@@ -1,0 +1,3 @@
+#!/bin/sh
+#SBATCH --nodes=2 --ntasks-per-node=6
+mpiexec parallel.exe 2000 2000
