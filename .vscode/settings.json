@@ -3,6 +3,7 @@
         "iostream": "cpp",
         "mpi.h": "c",
         "cmath": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "new": "cpp"
     }
 }
